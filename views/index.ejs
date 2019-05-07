@@ -1,0 +1,176 @@
+<%- include('partials/header'); -%>
+
+<!-- hero section -->
+<div class="jumbotron jumbotron-fluid" id="hero-landing">
+
+  <div class="container-fluid hero-landing">
+
+    <div class="hero-container">
+
+      <h1>Angelo Otero</h1>
+      <h2>Junior Web Developer</h2>
+
+    </div>
+    <div class="header-chevron">
+      <a href="#about-me"><i class="fas fa-chevron-down"></i></a>
+    </div>
+
+  </div>
+
+</div>
+
+
+<!-- About Me Section -->
+<div class="about-me" id="about-me">
+
+  <img src="images/Me.png" class="my-photo" alt="My Photo">
+
+  <div class="my-bio-container">
+    <h1>About Me</h1>
+    <div class="my-bio-text">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sapien nec sagittis aliquam malesuada bibendum arcu. Gravida arcu ac tortor dignissim convallis aenean et tortor.
+        Nulla facilisi etiam dignissim diam quis enim. Facilisi etiam dignissim diam quis enim.</p>
+    </div>
+  </div>
+
+</div>
+
+
+<!-- My Skills Section -->
+<section class="my-skills-container">
+  <div class="my-skills">
+
+    <h1>My Skills</h1>
+
+    <div class="skill-category-container">
+
+      <div class="skill-category">
+        <i class="fas fa-code"></i>
+        <h3>Front-End</h3>
+        <ul>
+          <li>HTML 5</li>
+          <li>CSS 3</li>
+          <li>Javascript ES6</li>
+          <li>Bootstrap</li>
+          <li>jQuery</li>
+          <li>Vue.js</li>
+        </ul>
+      </div>
+
+      <div class="skill-category">
+        <i class="fas fa-server"></i>
+        <h3>Back-End</h3>
+        <ul>
+          <li>Node.js</li>
+          <li>Express.js</li>
+          <li>EJS</li>
+          <li>MySQL</li>
+          <li>MongoDB</li>
+          <li>Mongoose</li>
+        </ul>
+      </div>
+
+      <div class="skill-category">
+        <i class="fas fa-desktop"></i>
+        <h3>Software</h3>
+        <ul>
+          <li>Adobe Photoshop</li>
+          <li>Adobe Illustrator</li>
+          <li>Command Line</li>
+          <li>Atom</li>
+          <li>Balsamiq</li>
+          <li>Git/Github</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- My Work -->
+<div class="my-work" id="my-work">
+  <h1>My Work</h1>
+  <div class="my-works">
+    <div class="my-work-container">
+      <img src="images/island.jpg" alt="">
+
+      <div class="my-work-description">
+        <h2>Pre-Hispanic Philippines</h2>
+        <p>lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+          aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+
+        <div class="tech-icons-container">
+          <i class="fab fa-html5"></i>
+          <i class="fab fa-css3"></i>
+          <i class="fab fa-vuejs"></i>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="my-work-container my-second-work">
+      <img src="images/island.jpg" alt="">
+      <div class="my-work-description">
+        <h2>Pre-Hispanic Philippines</h2>
+        <p>lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+          aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <div class="tech-icons-container">
+          <i class="fab fa-html5"></i>
+          <i class="fab fa-css3"></i>
+          <i class="fab fa-vuejs"></i>
+        </div>
+      </div>
+    </div>
+
+          <a href="https://github.com/angelo-otero" target="_blank"><button type="button" class="btn btn-lg btn-primary">View My Github</button></a>
+
+  </div>
+</div>
+
+
+<!-- Contact Me Section -->
+<section class="contact-me-container">
+
+  <div class="contact-me" id="contact-me">
+    <h1>Want to Work Together?</h1>
+    <form action="index" method="post">
+      <div class="nameInputs form-row">
+        <div class="form-group col">
+          <label class="sr-only" for="firstName">First Name</label>
+          <input type="text" class="form-control" name="" value="" id="firstName" placeholder="First Name">
+        </div>
+        <div class="form-group col">
+          <label class="sr-only" for="lastName">Last Name</label>
+          <input type="text" class="form-control" name="" value="" id="lastName" placeholder="Last Name">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="emailInput" class="sr-only">Email Address</label>
+        <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp" placeholder="Enter email">
+      </div>
+      <div class="form-group">
+        <label for="messageInput">Your Message</label>
+        <textarea class="form-control" id="messageInput" rows="10"></textarea>
+      </div>
+      <div class="form-group form-inline surveyInput">
+        <label for="inputSurvey">How did you hear about me?</label>
+        <select class="form-control" id="inputSurvey">
+          <option>LinkedIn</option>
+          <option>Twitter</option>
+          <option>Google Ads</option>
+          <option>Met in person</option>
+          <option>Recomended by a friend</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-lg btn-primary">Send Message!</button>
+    </form>
+  </div>
+
+</section>
+
+
+
+<%- include('partials/footer'); -%>
