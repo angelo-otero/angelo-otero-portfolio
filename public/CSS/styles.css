@@ -139,6 +139,7 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-content: center;
 }
 
 .hero-container {
@@ -370,9 +371,14 @@ img {
 
 
 /* jQuery Classes */
-.disabled {
+.test {
   display: none;
 }
+
+.card {
+  background-color: #132238;
+}
+
 
 
 /* Responsiveness */
@@ -441,8 +447,8 @@ img {
 }
 
 @media only screen and (max-width:900px) {
-  .jumbotron {
-    margin: 0;
+  .hero-landing {
+    height: 665px;
   }
 
   .hero-container h1 {
@@ -480,10 +486,36 @@ img {
   }
 }
 
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:620px) {
+  .hero-landing {
+    height: 300px;
+  }
   .hero-container {
     width: 85%;
     margin: 0 auto;
+  }
+
+  .fa-chevron-down {
+    display: none;
+  }
+
+  .about-me, .my-skills, .contact-me, .my-work-description {
+    padding: 30px;
+  }
+
+  .my-work img{
+    width: 100%;
+    height: 200px;
+    border-radius: 0;
+    margin-bottom: 10px;
+  }
+
+  .my-work-description {
+    text-align: left;
+  }
+
+  .tech-icons-container {
+    margin: 0;
   }
 
 }
@@ -493,11 +525,7 @@ img {
   body {
     font-size: 12px;
   }
-  p, a, li {
+  p, a, li, .footer-text {
     font-size: 1.25em;
   }
-}
-
-@media only screen and (max-width:415px) {
-
 }
