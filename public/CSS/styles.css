@@ -95,6 +95,7 @@ img {
 /* navigation bar */
 .navbar {
   background-color: #132238;
+  padding: 8px 24px;
 }
 
 .fa-bars {
@@ -120,6 +121,17 @@ img {
 .navbar-brand {
   border: 4px solid;
   border-radius: 10px;
+}
+
+.nav-link {
+  color: #ebf0f6;
+  text-decoration: underline;
+  margin: 0;
+}
+
+.nav-link:hover {
+  cursor: pointer;
+  text-decoration: none;
 }
 
 
@@ -165,11 +177,8 @@ img {
   top: 150px;
 }
 
-.header-chevron .fas{
+#chevron-btn{
   font-size: 3.375em;
-}
-
-.header-chevron a:hover {
   color: #ebf0f6;
 }
 
