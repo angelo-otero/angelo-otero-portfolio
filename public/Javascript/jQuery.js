@@ -26,7 +26,7 @@ $(document).ready(() => {
   const myWorkButton = $('#my-work-btn');
   const contactMeButton = $('#contact-me-btn');
   const chevronButton = $('#chevron-btn');
-
+  const logo = $('.logo');
 
 
   // changes site layout when screenwidth is 620 px in portrait mode
@@ -65,7 +65,7 @@ $(document).ready(() => {
   // scrolls down to proper section based on nav link clicked
   homeButton.click(function() {
     $('html, body').animate({
-    scrollTop: $("#hero-landing").offset().top}, 1000);
+    scrollTop: 0}, 1000);
   });
 
   aboutMeButton.click(function(){
@@ -80,10 +80,15 @@ $(document).ready(() => {
     }, 1000);
   });
 
-  chevronButton.on('mouseEnter', function(){
+  chevronButton.on('mouseenter', function(){
     chevronButton.css({
       'color': '#98ccd3',
       'cursor': 'pointer'
+    });
+  }).on('mouseleave', function(){
+    chevronButton.css({
+      'color': '#ebf0f6',
+      'cursor': 'default'
     });
   });
 
@@ -97,6 +102,11 @@ $(document).ready(() => {
     $('html, body').animate({
       scrollTop: $('#contact-me').offset().top
     }, 1000);
+  });
+
+  logo.click(function(){
+    $('html, body').animate({
+    scrollTop: 0}, 1000);
   });
 
 });

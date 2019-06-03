@@ -52,13 +52,13 @@ a {
   font-family: 'Montserrat', sans-serif;
   font-size: 1em;
   line-height: 1.5em;
-  color: #98ccd3;
+  color: #ebf0f6;
   text-decoration: underline;
 }
 
 a:hover {
   text-decoration: none;
-  color: #ebf0f6;
+  color: #98ccd3;
 }
 
 a:active{
@@ -76,7 +76,7 @@ a:active{
 
 .btn:hover {
   background-color: #98ccd3;
-  color: #ebf0f6;
+  color: #132238;
   border: 2px solid #98ccd3;
 }
 
@@ -118,11 +118,6 @@ img {
   color: #ebf0f6;
 }
 
-.navbar-brand {
-  border: 4px solid;
-  border-radius: 10px;
-}
-
 .nav-link {
   color: #ebf0f6;
   text-decoration: underline;
@@ -132,6 +127,11 @@ img {
 .nav-link:hover {
   cursor: pointer;
   text-decoration: none;
+  color: #98ccd3;
+}
+
+.logo:hover {
+  cursor: pointer;
 }
 
 
@@ -372,8 +372,8 @@ img {
   margin: 0 5px;
 }
 
-.footer-text p{
-  margin-bottom: 10px;
+.footer-text p, .web-dev-blog{
+  margin-bottom: 15px;
   margin-top: 0;
   font-size: .667em;
 }
