@@ -30,37 +30,37 @@ $(document).ready(() => {
 
 
   // changes site layout when screenwidth is 620 px in portrait mode
-  if (screenWidth <= '620' && screenWidth < screenHeight) {
-    // adds related carousel classes to proper divs
-    carouselControls.addClass('carousel slide');
-    carouselInner.addClass('carousel-inner');
-    carouselItem.addClass('carousel-item');
-    carouselArrows.show();
-    carouselIndicators.show();
-
-    // adds related card classes to proper divs
-    bootstrapCard.addClass('card');
-    bootstrapCard.removeClass('my-second-work');
-    bootstrapcardImage.addClass('card-img-top');
-    bootstrapCardBody.addClass('card-body');
-    bootstrapCardTitle.addClass('card-title');
-    bootstrapCardText.addClass('card-text');
-  } else {
-    // removes related carousel classes to proper divs
-    carouselControls.removeClass('carousel slide');
-    carouselInner.removeClass('carousel-inner');
-    carouselItem.removeClass('carousel-item');
-    carouselArrows.hide();
-    carouselIndicators.hide();
-    bootstrapCard.removeClass('card');
-
-    // removes related card classes to proper divs
-    bootstrapCard.removeClass('card');
-    bootstrapcardImage.removeClass('card-img-top');
-    bootstrapCardBody.removeClass('card-body');
-    bootstrapCardTitle.removeClass('card-title');
-    bootstrapCardText.removeClass('card-text');
-  }
+  // if (screenWidth <= '620' && screenWidth < screenHeight) {
+  //   // adds related carousel classes to proper divs
+  //   carouselControls.addClass('carousel slide');
+  //   carouselInner.addClass('carousel-inner');
+  //   carouselItem.addClass('carousel-item');
+  //   carouselArrows.show();
+  //   carouselIndicators.show();
+  //
+  //   // adds related card classes to proper divs
+  //   bootstrapCard.addClass('card');
+  //   bootstrapCard.removeClass('my-second-work');
+  //   bootstrapcardImage.addClass('card-img-top');
+  //   bootstrapCardBody.addClass('card-body');
+  //   bootstrapCardTitle.addClass('card-title');
+  //   bootstrapCardText.addClass('card-text');
+  // } else {
+  //   // removes related carousel classes to proper divs
+  //   carouselControls.removeClass('carousel slide');
+  //   carouselInner.removeClass('carousel-inner');
+  //   carouselItem.removeClass('carousel-item');
+  //   carouselArrows.hide();
+  //   carouselIndicators.hide();
+  //   bootstrapCard.removeClass('card');
+  //
+  //   // removes related card classes to proper divs
+  //   bootstrapCard.removeClass('card');
+  //   bootstrapcardImage.removeClass('card-img-top');
+  //   bootstrapCardBody.removeClass('card-body');
+  //   bootstrapCardTitle.removeClass('card-title');
+  //   bootstrapCardText.removeClass('card-text');
+  // }
 
   // scrolls down to proper section based on nav link clicked
   homeButton.click(function() {
