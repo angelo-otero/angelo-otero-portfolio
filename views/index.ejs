@@ -11,7 +11,7 @@
       <h2>Web Developer</h2>
 
     </div>
-    <div class="header-chevron">
+    <div class="header-chevron animated infinite bounce slow">
       <i class="fas fa-chevron-down" id="chevron-btn"></i>
     </div>
 
@@ -23,12 +23,12 @@
 <!-- About Me Section -->
 <section class="about-me" id="about-me">
 
-  <img src="images/Me.png" class="my-photo" alt="My Photo">
+  <img src="images/Me.jpg" class="my-photo" alt="My Photo">
 
   <div class="my-bio-container">
     <h1>About Me</h1>
     <div class="my-bio-text">
-      <p>I got my first taste for web development learning HTML and CSS while I was pursuing my Bachelor of Science in Simulation and Digital Entertainment at the University of Baltimore. I also learned C++ and C# for game programming, which helped foster an interest in coding.  Though I originally wanted to be a game artist, after graduating with a Bachelors in Science, I decided to go back to web development. I don't shy away from a challenge and welcome any opportunity to improve. When I'm not coding, I enjoy making art, reading sci-fi/fantasy novels, playing video games, and taking photos of my trips.</p>
+      <p>I got my first taste for web development learning HTML and CSS while I was pursuing my Bachelor of Science in Simulation and Digital Entertainment at the University of Baltimore. I also learned C++ and C# for game programming, which helped foster an interest in coding. I don't shy away from a challenge and welcome any opportunity to improve. When I'm not coding, I enjoy making art, reading sci-fi/fantasy novels, taking photos of my trips, and playing video games.</p>
     </div>
   </div>
 
@@ -40,11 +40,11 @@
 
   <div class="my-skills">
 
-    <h1 class="section-headers">My Skills</h1>
+    <h1 class="section-headers" id="skill-header">My Skills</h1>
 
     <div class="skill-category-container">
 
-      <div class="skill-category">
+      <div class="skill-category front-end">
         <i class="fas fa-code"></i>
         <h3>Front-End</h3>
         <ul>
@@ -53,11 +53,11 @@
           <li>Javascript ES6</li>
           <li>Bootstrap</li>
           <li>jQuery</li>
-          <li>Vue.js</li>
+          <li>React</li>
         </ul>
       </div>
 
-      <div class="skill-category">
+      <div class="skill-category back-end">
         <i class="fas fa-server"></i>
         <h3>Back-End</h3>
         <ul>
@@ -70,14 +70,14 @@
         </ul>
       </div>
 
-      <div class="skill-category">
+      <div class="skill-category software">
         <i class="fas fa-desktop"></i>
         <h3>Software</h3>
         <ul>
           <li>Adobe Photoshop</li>
           <li>Adobe Illustrator</li>
           <li>Command Line</li>
-          <li>Atom</li>
+          <li>Atom/Visual Studio Code</li>
           <li>Balsamiq</li>
           <li>Git/Github</li>
         </ul>
@@ -93,36 +93,39 @@
   <h1 class="section-headers">My Work</h1>
   <div class="my-works">
     <div class="my-work-container">
-      <img class="work-img" src="images/island.jpg" alt="">
+      <img class="work-img filipino-groups-img" src="images/Pre-Hispanic-Philippines.jpg" alt="">
 
-      <div class="my-work-description">
-        <h2><a href="#">Pre-Hispanic Philippines</a></h2>
-        <p>lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-          aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      <div class="my-work-description filipino-groups" id="first-work">
+        <h2><a href="https://damp-ridge-11276.herokuapp.com/" target="_blank">Pre-Hispanic Philippines</a></h2>
+        <p>
+          This was my first big full-stack website project. I wanted to explore more of my Filipino heritage, more specifically Filipino history before becoming a Spanish colony. This was difficult to research as most first-hand accounts were either destroyed by the Spanish, written in non-archival quality material, or were passed down through oral tradition. There are over a hundred Filipino ethnolinguistic groups each with its own rich history. This website serves as a short history to a few of these groups. There is also a short quiz section with a scoreboard. The front-end was built using jQuery and Bootstrap while the back-end was built using Node/Express and mongoDB.
         </p>
 
         <div class="tech-icons-container">
           <i class="fab fa-html5"></i>
           <i class="fab fa-css3"></i>
-          <i class="fab fa-vuejs"></i>
+          <i class="fab fa-js-square"></i>
+          <i class="fab fa-bootstrap"></i>
+          <i class="fab fa-node-js"></i>
         </div>
 
       </div>
     </div>
 
-    <div class="my-work-container my-second-work">
-      <img class="work-img" src="images/island.jpg" alt="">
+    <div class="my-work-container my-second-work" id="second-work">
+      <img class="work-img second-img" src="images/Influential-Artists.jpg" alt="">
 
-      <div class="my-work-description">
-        <h2><a href="#">Flight Tracker</a></h2>
-        <p>lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-          aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      <div class="my-work-description second-work">
+        <h2><a href="https://angelo-otero.github.io/Influential-Artists/" target="_blank">Influential Artists</a></h2>
+        <p>
+          This single page front-end site was built using React. As an artist, I wanted to learn more about the great artists of the past while learning web development. I wanted to better understand why these master artists are still celebrated hundreds of years after their deaths and educate myself on their cultural and historical impact. As such, rather than using a premade database, I created this website as a short summary of 21 notable artists from the 1400s to the early 1900s that I found inspirational and have researched. Users can filter artists by art movement, sort alphabetically or chronologically, and use the search bar to search for a specific artist in my list.
         </p>
 
         <div class="tech-icons-container">
           <i class="fab fa-html5"></i>
           <i class="fab fa-css3"></i>
-          <i class="fab fa-vuejs"></i>
+          <i class="fab fa-js-square"></i>
+          <i class="fab fa-react"></i>
         </div>
 
       </div>
@@ -139,37 +142,38 @@
 
   <div class="contact-me" id="contact-me">
     <h1 class="section-headers">Want to Work Together?</h1>
-    <form action="index" method="post">
+
+    <form action="/" method="post">
       <div class="nameInputs form-row">
         <div class="form-group col">
           <label class="sr-only" for="firstName">First Name</label>
-          <input type="text" class="form-control" name="" value="" id="firstName" placeholder="First Name">
+          <input type="text" class="form-control" name="firstName" id="firstName" placeholder="First Name">
         </div>
         <div class="form-group col">
           <label class="sr-only" for="lastName">Last Name</label>
-          <input type="text" class="form-control" name="" value="" id="lastName" placeholder="Last Name">
+          <input type="text" class="form-control" name="lastName" id="lastName" placeholder="Last Name">
         </div>
       </div>
       <div class="form-group">
         <label for="emailInput" class="sr-only">Email Address</label>
-        <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp" placeholder="Enter email">
+        <input type="email" class="form-control" id="emailInput" name="email" aria-describedby="emailHelp" placeholder="Enter email">
       </div>
       <div class="form-group">
         <label for="messageInput">Your Message</label>
-        <textarea class="form-control" id="messageInput" rows="5"></textarea>
+        <textarea class="form-control" id="messageInput" name="messageInput" rows="5"></textarea>
       </div>
       <div class="form-group form-inline surveyInput">
         <label for="inputSurvey">How did you hear about me?</label>
-        <select class="form-control" id="inputSurvey">
+        <select class="form-control" id="inputSurvey" name="inputSurvey">
           <option>LinkedIn</option>
-          <option>Twitter</option>
-          <option>Google Ads</option>
           <option>Met in person</option>
           <option>Recomended by a friend</option>
+          <option>Other</option>
         </select>
       </div>
       <button type="submit" class="btn btn-lg btn-primary">Send Message!</button>
     </form>
+
   </div>
 
 </section>

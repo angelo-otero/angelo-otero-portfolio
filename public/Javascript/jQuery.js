@@ -8,6 +8,11 @@ $(document).ready(() => {
   const contactMeButton = $('#contact-me-btn');
   const chevronButton = $('#chevron-btn');
   const logo = $('.logo');
+  //selectors for animation triggers
+  const aboutMe = document.getElementById('about-me');
+  const mySkills = document.getElementById('skill-header');
+  const firstWork = document.getElementById('first-work');
+  const secondWork = document.getElementById('second-work');
 
   // scrolls down to proper section based on nav link clicked
   homeButton.click(function() {
@@ -59,5 +64,31 @@ $(document).ready(() => {
   $('.fa-bars').click(function(){
     $(this).toggleClass('rotated');
   });
+
+  //when corresponding sections enters the viewport, add animation from animate css plug-in
+  $(window).scroll(function(){
+    //animation for my bio
+    if(aboutMe.getBoundingClientRect().top < window.innerHeight){
+      $('.about-me').addClass('animated fadeInLeftBig slow');
+    }
+
+    // //animation for my skills
+    // if(mySkills.getBoundingClientRect().top < window.innerHeight){
+    //   $('.front-end').addClass('animated zoomIn fast delay-1s');
+    //   $('.back-end').addClass('animated zoomIn fast delay-2s');
+    //   $('.software').addClass('animated zoomIn fast delay-3s');
+    // }
+    //
+    // //animation for my works
+    // if(firstWork.getBoundingClientRect().top < window.innerHeight){
+    //   $('.filipino-groups-img').addClass('animated zoomIn slow delay-1s');
+    //   $('.filipino-groups').addClass('animated slideInLeft slow');
+    // }
+    // if(secondWork.getBoundingClientRect().top < window.innerHeight){
+    //   $('.second-img').addClass('animated zoomIn slow delay-3s');
+    //   $('.second-work').addClass('animated slideInRight slow delay-2s');
+    // }
+  });
+
 
 });
