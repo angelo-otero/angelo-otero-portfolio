@@ -10,6 +10,7 @@
   "author": "Angelo Otero",
   "license": "ISC",
   "dependencies": {
+    "lodash": ">=4.17.19",
     "animate.css": "^3.7.2",
     "body-parser": "^1.19.0",
     "dotenv": "^8.2.0",
