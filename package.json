@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "echo would've built here"
+    "start": "node app.js",
+    "build": "node app.js"
   },
   "author": "Angelo Otero",
   "license": "ISC",
