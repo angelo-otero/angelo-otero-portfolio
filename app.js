@@ -9,7 +9,10 @@ const mailGun = require("nodemailer-mailgun-transport");
 
 const app = express();
 
-const port = process.env.port || 3000;
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 3000;
+}
 
 app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({
