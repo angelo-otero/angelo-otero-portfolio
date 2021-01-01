@@ -9,6 +9,9 @@
   },
   "author": "Angelo Otero",
   "license": "ISC",
+  "engines": {
+    "node": "12.x"
+  },
   "dependencies": {
     "lodash": ">=4.17.19",
     "animate.css": "^3.7.2",
