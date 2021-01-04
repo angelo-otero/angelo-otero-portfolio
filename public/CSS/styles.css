@@ -233,7 +233,7 @@ img {
 
 .skill-category-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   align-items: center;
   justify-content: center;
 }
@@ -365,12 +365,12 @@ transition: all 0.3s ease-in-out 0s;
 }
 
 .contact a {
-  color: #98ccd3;
+  color: #132238;
   text-decoration: underline;
 }
 
 .contact a:hover {
-  color: #132238;
+  color: #98ccd3;
   text-decoration: none;
 }
 
