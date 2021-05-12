@@ -20,7 +20,7 @@
     "ejs": "^3.1.5",
     "express": "4.17.1",
     "jquery-visible": "^1.2.0",
-    "nodemailer": "^6.4.17",
+    "nodemailer": "^6.4.16",
     "nodemailer-mailgun-transport": "^2.0.2"
   }
 }
