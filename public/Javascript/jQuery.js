@@ -65,13 +65,6 @@ $(document).ready(() => {
     $(this).toggleClass('rotated');
   });
 
-  //when corresponding sections enters the viewport, add animation from animate css plug-in
-  $(window).scroll(function(){
-    //animation for my bio
-    if(aboutMe.getBoundingClientRect().top < window.innerHeight){
-      $('.about-me').addClass('animated fadeInLeftBig slow');
-    }
-
     // //animation for my skills
     // if(mySkills.getBoundingClientRect().top < window.innerHeight){
     //   $('.front-end').addClass('animated zoomIn fast delay-1s');
